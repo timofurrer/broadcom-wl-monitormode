@@ -4,23 +4,28 @@
 
 ***
 
-**Author:** Timo Furrer
+**Author:** Timo Furrer <tuxtimo@gmail.com>
 
 ## Installation
 
 1. Compile kernel module:
 
-    make
+```bash
+make
+```
 
 2. Testing driver
 
-    insmod ./wl.ko
+```bash
+insmod ./wl.ko
+```
 
 *Note: you may have to unload the currently loaded wl driver with `rmmod wl`.*
 
 3. Enable monitor mode
 
-    bash -c "echo 1 > /proc/brcm_monitor0"
+```bash
+bash -c "echo 1 > /proc/brcm_monitor0"
+```
 
 Now you should have an interface called `prism0` in monitor mode.
-~
